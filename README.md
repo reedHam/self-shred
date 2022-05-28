@@ -13,3 +13,5 @@ shred -u "${0}"
 ```
 
 where `${0}` is a magic variable automagically set to path to the script.
+
+Idea from https://stackoverflow.com/a/3430367
