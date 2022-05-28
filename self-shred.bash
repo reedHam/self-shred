@@ -1,8 +1,6 @@
 #!/bin/bash
+echo "my password";
 
-
-# -----------------------------------------------------------------------------
-# DELETE FILE AFTER SUCESSFULL EXECUTION
 SHREDDING_GRACE_SECONDS=${SHREDDING_GRACE_SECONDS:-5}
 (( $SHREDDING_GRACE_SECONDS > 0 )) && echo -e "Shreding ${0} in $SHREDDING_GRACE_SECONDS seconds \e[1;31mCTRL-C TO KEEP FILE\e[0m"
 BOMB="●"
