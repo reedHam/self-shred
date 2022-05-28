@@ -3,6 +3,7 @@
 
 # -----------------------------------------------------------------------------
 # DELETE FILE AFTER SUCESSFULL EXECUTION
+# Idea from https://stackoverflow.com/a/34303677
 function selfShred {
     SHREDDING_GRACE_SECONDS=${SHREDDING_GRACE_SECONDS:-5}
     (( $SHREDDING_GRACE_SECONDS > 0 )) && echo -e "Shreding ${0} in $SHREDDING_GRACE_SECONDS seconds \e[1;31mCTRL-C TO KEEP FILE\e[0m"
