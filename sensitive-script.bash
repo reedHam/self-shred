@@ -1,6 +1,7 @@
 #!/bin/bash
 echo "my password";
 
-echo "Shreding $0 in 5 seconds"
-sleep 5
+SHREDDING_GRACE_SECONDS=${SHREDDING_GRACE_SECONDS:-5}
+[ $SHREDDING_GRACE_SECONDS -gt 0 ] && echo "Shreding in $SHREDDING_GRACE_SECONDS seconds"
+sleep $SHREDDING_GRACE_SECONDS
 shred -u "${0}"
