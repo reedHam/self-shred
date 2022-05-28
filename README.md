@@ -2,7 +2,7 @@
 
 ![example](./self-shred.gif "Example")
 
-This bash script deletes itself using [Unix Shred](https://en.wikipedia.org/wiki/Shred_(Unix)) the after successfully running.  
+This bash script deletes itself using [Unix Shred](https://en.wikipedia.org/wiki/Shred_(Unix)) after successfully running.  
 Add the code in `self-shred.bash` to the end of your bash script to delete after execution.  
 This can be used to reduce the chance of leaking sensitive information contained within.  
 
